@@ -8,19 +8,18 @@ namespace AllergiesScoreCard.Tests
   public class AllergiesTests
   {
     [TestMethod]
-    public void GetAllergieTable_ReturnsAllergieTable_Dictionary()
+    public void GetAllergyTable_ReturnsAllergyTable_Dictionary()
     {
       Dictionary<string, int> newDictionary = new Dictionary<string, int>() {{"eggs", 1}, {"peanuts", 2}, {"shellfish", 4}, {"strawberries", 8}, {"tomatoes", 16}, {"chocolate", 32}, {"pollen", 64}, {"cats", 128}};
-      Dictionary<string, int> result = Allergies.GetAllergieTable();
+      Dictionary<string, int> result = Allergies.GetAllergyTable();
       CollectionAssert.AreEqual(newDictionary, result);
+    }
+    [TestMethod]
+    public void AllergyList_ReturnsAllergyList_List()
+    {
+      List<string> newList = new List<string> {};
+      Allergies result = new Allergies("Patrick");
+      CollectionAssert.AreEqual(newList, result.AllergyList);
     }
   }
 }
-// Example Test Method Structure
-//_________________________
-// [TestMethod]
-// public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-// {
-//   // any necessary logic to prep for test; instantiating new classes, etc.
-//   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-// }

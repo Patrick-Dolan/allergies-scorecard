@@ -5,14 +5,18 @@ namespace AllergiesScoreCard.Models
   public class Allergies
   {
     public string Name { get; set; }
-    private static Dictionary<string, int> _allergieTable = new Dictionary<string, int>() {{"eggs", 1}, {"peanuts", 2}, {"shellfish", 4}, {"strawberries", 8}, {"tomatoes", 16}, {"chocolate", 32}, {"pollen", 64}, {"cats", 128}};
+    public List<string> AllergyList { get; set; }
+    private static Dictionary<string, int> _allergyTable = new Dictionary<string, int>() {{"eggs", 1}, {"peanuts", 2}, {"shellfish", 4}, {"strawberries", 8}, {"tomatoes", 16}, {"chocolate", 32}, {"pollen", 64}, {"cats", 128}};
 
-    public static Dictionary<string, int> GetAllergieTable()
+    public Allergies(string name)
     {
-      return _allergieTable;
+      Name = name;
+      AllergyList = new List<string> {};
+    }
+
+    public static Dictionary<string, int> GetAllergyTable()
+    {
+      return _allergyTable;
     }
   }
-
-  
-
 }

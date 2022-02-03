@@ -1,12 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AllergiesScoreCard.Models;
+using System.Collections.Generic;
 
 namespace AllergiesScoreCard.Tests
 {
   [TestClass]
   public class AllergiesTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void GetAllergieTable_ReturnsAllergieTable_Dictionary()
+    {
+      Dictionary<string, int> newDictionary = new Dictionary<string, int>() {{"eggs", 1}, {"peanuts", 2}, {"shellfish", 4}, {"strawberries", 8}, {"tomatoes", 16}, {"chocolate", 32}, {"pollen", 64}, {"cats", 128}};
+      Dictionary<string, int> result = Allergies.GetAllergieTable();
+      CollectionAssert.AreEqual(newDictionary, result);
+    }
   }
 }
 // Example Test Method Structure

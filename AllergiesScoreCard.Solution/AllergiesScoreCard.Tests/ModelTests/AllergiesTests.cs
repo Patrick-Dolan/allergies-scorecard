@@ -21,5 +21,12 @@ namespace AllergiesScoreCard.Tests
       Allergies result = new Allergies("Patrick");
       CollectionAssert.AreEqual(newList, result.AllergyList);
     }
+    [TestMethod]
+    public void GetScore_ReturnsScore_Score()
+    {
+      Allergies person = new Allergies("Marni");
+      int number = 0;
+      Assert.AreEqual(number, person.Score);
+    }
   }
 }

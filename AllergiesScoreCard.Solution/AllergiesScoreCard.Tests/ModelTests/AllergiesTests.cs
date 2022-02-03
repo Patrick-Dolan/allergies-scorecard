@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using AllergiesScoreCard.Models;
 
-namespace ProjectName.Tests
+namespace AllergiesScoreCard.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class AllergiesTests
   {
     // Test methods go here
   }

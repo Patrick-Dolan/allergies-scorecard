@@ -22,6 +22,24 @@ namespace AllergiesScoreCard.Tests
       CollectionAssert.AreEqual(newList, result.AllergyList);
     }
     [TestMethod]
+    public void AllergyList_AddToAllergyList_List()
+    {
+      List<string> newList = new List<string> {"eggs"};
+      Allergies result = new Allergies("Patrick");
+      result.AllergyList.Add("eggs");
+      CollectionAssert.AreEqual(newList, result.AllergyList);
+    }
+    [TestMethod]
+    public void AllergyList_RemoveToAllergyList_List()
+    {
+      List<string> newList = new List<string> {"peanuts"};
+      Allergies result = new Allergies("Patrick");
+      result.AllergyList.Add("eggs");
+      result.AllergyList.Add("peanuts");
+      result.AllergyList.Remove("eggs");
+      CollectionAssert.AreEqual(newList, result.AllergyList);
+    }
+    [TestMethod]
     public void GetScore_ReturnsScore_Score()
     {
       Allergies person = new Allergies("Marni");

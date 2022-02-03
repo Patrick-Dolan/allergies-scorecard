@@ -1,8 +1,8 @@
-# {Application name here}
+# Allergies Score Card
 
-#### By _**{List of contributors}**_
+#### By _**Marni Sucher & Patrick Dolan**_
 
-#### _{Brief description of application}_
+#### _A console application to give you a numeric score for your allergies._
 
 <!-- ## Github Pages Link
 
@@ -16,7 +16,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+A console application to give you a numeric score for your allergies.
 
 ## Setup/Installation Requirements
 
@@ -49,10 +49,10 @@ _{This is a detailed description of your application. Give as much detail as nee
 ## Contact Me
 
 Let me know if you run into any issues or have questions, ideas or concerns:  
-{PUT EMAIL HERE}
+dolanp1992@gmail.com
 
 ## License
 
 _MIT_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _2022_ _Marni Sucher & Patrick Dolan_

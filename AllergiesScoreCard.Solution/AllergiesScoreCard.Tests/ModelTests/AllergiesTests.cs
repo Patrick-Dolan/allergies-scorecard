@@ -46,5 +46,12 @@ namespace AllergiesScoreCard.Tests
       int number = 0;
       Assert.AreEqual(number, person.Score);
     }
+    [TestMethod]
+    public void ExtractKeys_ReturnsAllergyTableKeys_List()
+    {
+      List<string> result = Allergies.ExtractKeys();
+      List<string> newList = new List<string> {"eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"};
+      Assert.AreEqual(newList, result);
+    }
   }
 }

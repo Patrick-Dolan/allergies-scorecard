@@ -1,0 +1,6 @@
+bin/
+obj/
+{ProjectName.Solution/ProjectName}/bin/
+{ProjectName.Solution/ProjectName}/obj/
+{ProjectName.Solution/ProjectName.Tests}/bin/
+{ProjectName.Solution/ProjectName.Tests}/obj/
